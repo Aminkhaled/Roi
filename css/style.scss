@@ -9,6 +9,7 @@ body{
   font-size: 14px;
   overflow-x: hidden;
 }
+
 .btn-roi{
   margin-top: 35px;
   background-color: $mainColor;
@@ -16,6 +17,14 @@ body{
   border-radius: 10px;
   color: white;
   font-size: 15px;
+}
+#services .active-tab{
+  color: $mainColor;
+  background-color: white;
+  border: 2px solid;
+
+  border-color: $mainColor $mainColor #fff;
+  border-bottom-color: transparent;
 }
 /*
 ==============
@@ -48,10 +57,18 @@ header{
 Navbar
 ==============
 */
+.navbar-light .navbar-brand{
+
+    color: $mainColor;
+  font-size: 25px;
+  font-weight: 800;
+}
 nav{
   .navbar-nav{
     margin-top:15px;
+
   }
+
   .navbar-nav .nav-item a{
     margin-right: 15px;
     font-size: 15px;
@@ -61,7 +78,19 @@ nav{
 
   }
 }
+.dropdown-menu{
+  background-color: $mainColor;
+  color: white;
+  padding: 1.5rem 15px;
 
+}
+nav .navbar-nav .nav-item a.dropdown-item {
+  margin-top: 25px;
+  color: white !important;
+}
+nav .navbar-nav .nav-item a.dropdown-item:hover{
+  color: $mainColor !important;
+}
 /*
 ==============
 Sliders
@@ -418,6 +447,292 @@ Footer
   }
 }
 
+/*
+=====================
+  services
+=====================
+*/
+#services{
+  padding: 50px;
+  .nav-tabs .nav-item .nav-link{
+    height: 280px;
+  }
+
+  .nav-tabs {
+    border-bottom: 1px solid $mainColor;
+    .tab-caption{
+      h2{
+        margin-top: 20px;
+        color: black;
+        font-size: 25px;
+      }
+      p{
+        font-size: 15px;
+        color: black;
+      }
+    }
+
+  }
+.tab-pane-content{
+  padding: 40px 0;
+  .tab-pane-content-title{
+    h3{
+      font-size: 40px;
+
+      strong{
+        display: block;
+      }
+    }
+    p{
+      color: #363636;
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 30px;
+    }
+  }
+  .tab-content-course{
+    margin-top: 20px;
+    img{
+      margin-left: 60px;
+
+    }
+    h2{
+      font-size: 25px;
+      margin-top: 25px;
+      margin-left: 70px;
+    }
+    .btn-roi {
+      margin-top: 35px;
+      background-color: #800225;
+      padding: 12px 37px;
+      border-radius: 0;
+      color: white;
+      font-size: 15px;
+      margin-left: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+}
+/*
+==================
+ Workshops
+==================
+*/
+
+
+  .ftco-section {
+    padding: 7em 0;
+    position: relative;
+  }
+  .bg-light {
+    background: #f8f9fd !important;
+  }
+  .ftco-faqs .myaccordion {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .ftco-faqs .myaccordion .card,
+  .ftco-faqs .myaccordion .card:last-child .card-header {
+    border: none;
+    background: transparent;
+  }
+
+  .ftco-faqs .myaccordion .card-header {
+    border: none;
+    background: transparent;
+  }
+  .ftco-faqs .myaccordion .card-header p {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .ftco-faqs .myaccordion .fa {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .ftco-faqs .myaccordion .btn {
+    width: 100%;
+    font-weight: 600;
+    color: black;
+    padding: 0;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    border-radius: 0 !important;
+    margin-bottom: 10px;
+    border-radius: 40px !important;
+    -webkit-box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
+    -moz-box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
+    box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
+  }
+
+  .ftco-faqs .myaccordion .btn-link:hover,
+  .ftco-faqs .myaccordion .btn-link:focus {
+    text-decoration: none;
+  }
+
+  .ftco-faqs button[aria-expanded="true"] {
+    background-color: $mainColor;
+    color: #fff !important;
+  }
+
+  .ftco-faqs button[aria-expanded="false"] {
+    background-color: #fff;
+  }
+  .ftco-faqs .card-body {
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
+    -moz-box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
+    box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.21) !important;
+  }
+
+
+  .ftco-faqs button[aria-expanded="true"] .fa {
+    color: #fff !important;
+  }
+  .ftco-faqs .myaccordion .fa {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .ftco-faqs .myaccordion .fa {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .ftco-faqs [data-toggle="collapse"].collapsed .fa:before {
+    content: "\f067";
+    font-family: "FontAwesome";
+    font-style: normal;
+  }
+
+  .ftco-faqs [data-toggle="collapse"] .fa:before {
+    content: "\f068";
+    font-family: "FontAwesome";
+    font-style: normal;
+  }
+
+  .ftco-faqs .img {
+    height: 450px;
+    -webkit-box-shadow: 0px 8px 21px -10px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 8px 21px -10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 8px 21px -10px rgba(0, 0, 0, 0.12);
+  }
+  .img, .blog-img, .user-img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+   .heading-section h2{
+     font-size: 20px;
+     font-weight: 800;
+   }
+  .icon-video {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    -webkit-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  .justify-content-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+//breadcrum
+
+.breadcrumb_area{
+  height: 600px;
+;
+  background-size: cover;
+  background-repeat: no-repeat;
+  h1{
+    transform: translatey(200px);
+    justify-content: center;
+    font-size: 65px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 20px;
+  }
+}
+/*
+===============
+Contact
+===============
+*/
+/* Service */
+.service_style_2_area{
+  padding: 150px 0;
+}
+.slider_service_area {
+  z-index: 999;
+  position: relative;
+
+}
+.service_style_2_area.pt_0 {
+  padding-top: 0;
+}
+.service_style_2_area .service_style_2_details {
+  background: -webkit-linear-gradient(top, #ffffff, #eef2f9);
+  padding: 40px 50px 0 50px;
+  height: 500px;
+}
+.service_style_2_area .service_style_2_details p {
+  margin: 50px 0 0 0;
+}
+.service_style_2_area.hv2_service_with_details .service_style_2_details p {
+  margin: 50px 0 50px 0;
+}
+.service_style_2_area .service_style_2_details p > span {
+  display: block;
+}
+.service_style_2_area .service_style_2_details h2 {
+  margin-top: 30px;
+}
+.service_style_2_area .service_style_2_details i {
+  font-size: 50px;
+  width: 123px;
+  height: 123px;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 123px;
+  background-color: #eef3f9;
+  color: $mainColor;
+}
+.service_style_2_area .service_style_2_details a {
+  font-weight: 500;
+}
+.service_style_2_area .service_style_2_details:hover a {
+  color: $mainColor;
+}
+.slider_service_img {
+  position: relative;
+  background: url("../images/service_1.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 230px;
+}
 /*
 ==================
  Media Query
