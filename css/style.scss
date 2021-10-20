@@ -521,7 +521,17 @@ Footer
  Workshops
 ==================
 */
-
+#workshop{
+  .workshop-title-intro {
+    h2{
+      font-weight: 700;
+    }
+    p{
+      margin: 40px 0;
+      font-size: 20px;
+    }
+  }
+}
 
   .ftco-section {
     padding: 7em 0;
@@ -664,9 +674,9 @@ Footer
 
 .breadcrumb_area{
   height: 600px;
-;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+
   h1{
     transform: translatey(200px);
     justify-content: center;
